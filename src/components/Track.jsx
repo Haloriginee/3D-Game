@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { GLTF, GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { Collider } from "./Collider";
+import { Ramp } from "./Ramp";
 
 export function Track() {
   const res = useLoader(
@@ -60,7 +61,8 @@ export function Track() {
     <Collider position={[-4.15,0,-0.67]} scale={[0.1, 0.5, 0.1]}/>
     <Collider position={[-4.9,0,-0.58]} scale={[0.1, 0.5, 0.1]}/>
     <Collider position={[-0.3,0,1]} scale={[0.1, 0.5, 0.1]}/>
-    </>
 
+    <Ramp/>
+    </>
   )
 }
