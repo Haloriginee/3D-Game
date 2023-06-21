@@ -5,6 +5,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useRaycastVehicle } from "@react-three/cannon";
 import { WheelDebug } from "./WheelDebug";
 import { useWheels }  from "./useWheels";
+import { Controls } from "./Controls";
 
 export function Car() {
   let mesh = useLoader(
@@ -35,6 +36,8 @@ export function Car() {
     }),
     useRef(null),
   );
+
+  Controls(vehicleApi, chassisApi)
 
   useEffect(() => {
     mesh.scale.set(0.0012, 0.0012, 0.0012);
