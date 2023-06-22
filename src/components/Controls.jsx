@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const Controls = ( vehicleApi, chassisApi ) => {
-  let [ control, setControl] = useState({
-
-
-
-
-
-  });
+  let [ control, setControl] = useState({ });
 
   useEffect(() => {
 
