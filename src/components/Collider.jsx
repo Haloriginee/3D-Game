@@ -1,7 +1,7 @@
 import { useBox } from "@react-three/cannon";
 
 
-const debug = true;
+const debug = false;
 
 export function Collider({ position, scale }) {
   useBox(() => ({
